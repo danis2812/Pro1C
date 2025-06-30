@@ -1,0 +1,15 @@
+Изучение PostgreSQL для 1С-ника
+
+Курсы по PostgreSQL от компании Postgres Professional.
+Полный список курсов на их сайте: https://postgrespro.ru/education/courses
+
+Курсы, которые я у них выделяю для себя:
+
+Администрирование PostgreSQL 16. Базовый курс (DBA1) https://rutube.ru/plst/452182?r=wd
+PostgreSQL 16. Оптимизация запросов https://rutube.ru/plst/452238?r=wd
+Администрирование PostgreSQL 16. Настройка и мониторинг  (DBA2) https://rutube.ru/plst/452252?r=wd
+Администрирование PostgreSQL 13. Резервное копирование и репликация (DBA3) https://rutube.ru/plst/452216?r=wd
+Документация по PostgreSQL на русском https://postgrespro.ru/docs/postgresql/current
+
+Курс от фирмы 1С: Подготовка к 1С:Эксперту по технологическим вопросам. Применение методик. Здесь есть информация по платформе 1С, PostgreSQL и MS SQL Server.
+https://uc1.1c.ru/course/podgotovka-k-1s-ekspertu-po-tehnologicheskim-voprosam-primenenie-metodik/
