@@ -1,0 +1,23 @@
+Список диагностик, которые будут разбираться
+
+BSL диагностики:
+1. Метод НачатьТранзакцию должен быть за пределами блока Попытка-Исключение непосредственно перед оператором Попытка; 
+https://1c-syntax.github.io/bsl-language-server/diagnostics/BeginTransactionBeforeTryCatch/
+2. Метод ЗафиксироватьТранзакцию должен идти последним в блоке Попытка перед оператором Исключение, чтобы гарантировать, что после ЗафиксироватьТранзакцию не возникнет исключение.
+https://1c-syntax.github.io/bsl-language-server/diagnostics/CommitTransactionOutsideTryCatch/
+3. Начало транзакции и ее фиксация (отмена) должны происходить в контексте одного метода.
+https://1c-syntax.github.io/bsl-language-server/diagnostics/PairingBrokenTransaction/
+4. Вызов метода ОтменитьТранзакцию должен производиться в блоке Попытка-Исключение. В блоке Исключение нужно сначала вызвать метод ОтменитьТранзакцию, а затем выполнять другие действия, если они требуются.
+https://1c-syntax.github.io/bsl-language-server/diagnostics/WrongUseOfRollbackTransactionMethod/
+
+SonarQube диагностики
+1. Метод "НачатьТранзакцию" должен располагаться непосредственно перед оператором "Попытка"
+https://docs.checkbsl.org/checks/overall/BeginTransactionInTryBlock/
+2. Завершение транзакции должно выполняться в конструкции Попытка ... Исключение
+https://docs.checkbsl.org/checks/overall/CommitTransactionOutsideTry/
+3. Для вызова НачатьТранзакцию отсутствует парный вызов ЗафиксироватьТранзакцию
+https://docs.checkbsl.org/checks/overall/PairBeginCommitTransactionCall/
+4. Использование синхронных методов в транзакции / модальные вызовы
+https://docs.checkbsl.org/checks/overall/SynchronousMethodsInTransaction/
+5. Неправильное использование метода "ОтменитьТранзакцию"
+https://docs.checkbsl.org/checks/overall/WrongUsageOfRollbackTransactionMethod/
