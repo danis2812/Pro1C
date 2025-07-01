@@ -11,7 +11,7 @@ https://1c-syntax.github.io/bsl-language-server/diagnostics/PairingBrokenTransac
 4. Вызов метода ОтменитьТранзакцию должен производиться в блоке Попытка-Исключение. В блоке Исключение нужно сначала вызвать метод ОтменитьТранзакцию, а затем выполнять другие действия, если они требуются.
 https://1c-syntax.github.io/bsl-language-server/diagnostics/WrongUseOfRollbackTransactionMethod/
 
-SonarQube диагностики
+SonarQube правила
 1. Метод "НачатьТранзакцию" должен располагаться непосредственно перед оператором "Попытка"
 https://docs.checkbsl.org/checks/overall/BeginTransactionInTryBlock/
 2. Завершение транзакции должно выполняться в конструкции Попытка ... Исключение
